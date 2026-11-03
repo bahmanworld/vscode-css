@@ -1,117 +1,11 @@
-* {
-  corner-shape: squircle !important;
-}
-
-.quick-input-widget {
-  border-radius: 20px !important;
-}
-
-.notification-toast {
-  border-radius: 10px !important;
-}
-
-.badge-content {
-  corner-shape: round !important;
-}
-
-.slider,
-.minimap-slider-horizontal {
-  border-radius: 30px !important;
-}
-
-.monaco-list,
-.monaco-list-rows {
-  border-radius: 0px !important;
-}
-
-.debug-toolbar,
-.part.panel .actions-container .action-item .active-item-indicator,
-.monaco-custom-toggle,
-.suggest-input-container,
-.start-debug-action-item,
-.open-in-agents-titlebar-widget,
-.monaco-list-row,
-.monaco-button,
-.monaco-inputbox,
-.action-list-filter-input,
-.agent-status-pill,
-.scm-editor,
-.scm-editor .monaco-editor,
-.scm-editor .overflow-guard,
-.editor-widget.suggest-widget .monaco-list-rows .monaco-list-row {
-  border-radius: 100px !important;
-}
-
-
-.notification-toast {
-  border-radius: 10px !important;
-}
-
-.notifications-list-container .monaco-list-rows,
-.notifications-list-container .notification-list-item,
-.notifications-list-container .monaco-list-row {
-  border-radius: 20px !important;
-}
-
-.monaco-button-dropdown .monaco-button:first-child {
-  border-radius: 0px !important;
-  border-top-left-radius: 100px !important;
-  border-bottom-left-radius: 100px !important;
-}
-
-.monaco-button-dropdown .monaco-button:last-child {
-  border-radius: 0px !important;
-  border-top-right-radius: 100px !important;
-  border-bottom-right-radius: 100px !important;
-}
-
-
 .part.statusbar {
   background-color: transparent !important;
-}
-
-.part.activitybar {
-  border-top-left-radius: 20px !important;
-  border-bottom-left-radius: 20px !important;
 }
 
 .part.activitybar .action-item {
   margin-top: 0px !important;
 }
 
-.part.activitybar .action-item .active-item-indicator {
-  border-radius: 20px !important;
-}
-
-.part.sidebar {
-  border-top-right-radius: 20px !important;
-  border-bottom-right-radius: 20px !important;
-}
-
-.part.auxiliarybar {
-  border-radius: 20px !important;
-}
-
-.part.panel {
-  border-radius: 20px !important;
-}
-
-.part.editor {
-  border-radius: 20px !important;
-}
-
-.part.statusbar .statusbar-item a {
-  border-radius: 100px !important;
-}
-
-.action-item a {
-  border-radius: 20px !important;
-}
-
-.tabs-container {
-  gap: 2px !important;
-  padding-left: 2px !important;
-}
 
 .tabs-and-actions-container {
   background-color: transparent !important;
@@ -155,23 +49,28 @@
   display: none !important;
 }
 
+.tabs-container {
+  gap: 2px !important;
+  padding-left: 2px !important;
+}
 
 .tab .tab-fill {
   inset: 0px !important;
   margin-top: 2px !important;
-  border-radius: 100px !important;
+  border-radius: 6px !important;
   border: none !important;
   background-color: transparent !important;
-  height: 27px !important;
+  height: 26px !important;
   align-items: center !important;
 }
 
 .tab .tab-actions {
-  margin-top: 0px !important;
+  margin-top: -1px !important;
+  margin-inline-end: -2px !important;
 }
 
 .tab .monaco-icon-label {
-  margin-top: 3px !important;
+  margin-top: 2px !important;
 }
 
 .tab .monaco-icon-label::before {
@@ -196,16 +95,16 @@
 
 .vs-dark .tab:not(.active):hover .tab-fill {
   border: 1px solid color-mix(in srgb,
-      var(--modern-ui-editor-tab-unfocused-active-hover-background) 90%,
+      var(--modern-ui-editor-tab-unfocused-active-hover-background) 95%,
       var(--vscode-foreground)) !important;
 }
 
 .vs-dark .tab.active .tab-fill {
-  border: 1px solid color-mix(in srgb, var(--modern-ui-editor-tab-unfocused-active-hover-background) 80%, var(--vscode-foreground)) !important;
+  border: 1px solid color-mix(in srgb, var(--modern-ui-editor-tab-unfocused-active-hover-background) 85%, var(--vscode-foreground)) !important;
 }
 
 .editor-widget.suggest-widget {
-  border-radius: 20px !important;
+  border-radius: 5px !important;
 }
 
 
@@ -213,7 +112,7 @@
 .monaco-editor .focused .selected-text {
   background-color: color-mix(in srgb, var(--vscode-editor-selectionBackground) 100%, transparent) !important;
   /* margin-top: -1px !important; */
-  border-radius: 20px !important;
+  border-radius: 5px !important;
   border: 1px solid color-mix(in srgb,
       var(--vscode-editor-selectionBackground) 50%,
       var(--vscode-foreground)) !important;
@@ -230,7 +129,7 @@
 .monaco-editor .wordHighlightText,
 .monaco-editor .view-overlays .current-line {
   background-color: color-mix(in srgb, var(--vscode-foreground) 10%, transparent) !important;
-  border-radius: 100px !important;
+  border-radius: 5px !important;
   border: 1px solid color-mix(in srgb,
       var(--vscode-foreground) 20%,
       transparent) !important;
@@ -240,7 +139,7 @@
 .monaco-editor .hoverHighlight {
   height: 16px !important;
   background-color: transparent !important;
-  border-radius: 100px !important;
+  border-radius: 5px !important;
   border: 1px solid color-mix(in srgb,
       var(--modern-ui-editor-tab-unfocused-active-hover-background) 50%,
       var(--vscode-foreground)) !important;
