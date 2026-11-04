@@ -74,7 +74,7 @@
 }
 
 .tab .monaco-icon-label .label-name {
-  color: color-mix(in srgb, var(--vscode-foreground) 80%, transparent) !important;
+  color: color-mix(in srgb, var(--vscode-foreground) 100%, transparent) !important;
 }
 
 .tab.active .monaco-icon-label .label-name {
@@ -93,14 +93,14 @@
 
 .tab:not(.active):hover .tab-fill {
   box-shadow: none !important;
-  border: 1px solid color-mix(in srgb, var(--modern-ui-tab-active-background) 95%, var(--vscode-foreground)) !important;
-  background-color: color-mix(in srgb, var(--modern-ui-tab-active-background) 99%, var(--vscode-foreground)) !important;
+  border: 1px solid color-mix(in srgb, var(--vscode-foreground) 10%, transparent) !important;
+  background-color: color-mix(in srgb, var(--vscode-foreground) 5%, transparent) !important;
 }
 
 .tab.active .tab-fill {
   box-shadow: none !important;
-  border: 1px solid color-mix(in srgb, var(--modern-ui-tab-active-background) 85%, var(--vscode-foreground)) !important;
-  background-color: color-mix(in srgb, var(--modern-ui-tab-active-background) 95%, var(--vscode-foreground)) !important;
+  border: 1px solid color-mix(in srgb, var(--vscode-foreground) 20%, transparent) !important;
+  background-color: color-mix(in srgb, var(--vscode-foreground) 8%, transparent) !important;
 }
 
 /* .vs-dark .tab:not(.active):hover .tab-fill {
