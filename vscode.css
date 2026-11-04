@@ -57,7 +57,7 @@
 .tab .tab-fill {
   inset: 0px !important;
   margin-top: 2px !important;
-  border-radius: 6px !important;
+  border-radius: 5px !important;
   border: none !important;
   background-color: transparent !important;
   height: 26px !important;
@@ -73,6 +73,14 @@
   margin-top: 2px !important;
 }
 
+.tab .monaco-icon-label .label-name {
+  color: color-mix(in srgb, var(--vscode-foreground) 80%, transparent) !important;
+}
+
+.tab.active .monaco-icon-label .label-name {
+  color: var(--vscode-foreground) !important;
+}
+
 .tab .monaco-icon-label::before {
   font-size: 10px !important;
   margin-top: 1px !important;
@@ -85,23 +93,23 @@
 
 .tab:not(.active):hover .tab-fill {
   box-shadow: none !important;
-  background-color: var(--modern-ui-editor-tab-unfocused-active-hover-background) !important;
+  border: 1px solid color-mix(in srgb, var(--modern-ui-tab-active-background) 95%, var(--vscode-foreground)) !important;
+  background-color: color-mix(in srgb, var(--modern-ui-tab-active-background) 99%, var(--vscode-foreground)) !important;
 }
 
 .tab.active .tab-fill {
   box-shadow: none !important;
-  background-color: var(--modern-ui-tab-active-background) !important;
+  border: 1px solid color-mix(in srgb, var(--modern-ui-tab-active-background) 85%, var(--vscode-foreground)) !important;
+  background-color: color-mix(in srgb, var(--modern-ui-tab-active-background) 95%, var(--vscode-foreground)) !important;
 }
 
-.vs-dark .tab:not(.active):hover .tab-fill {
-  border: 1px solid color-mix(in srgb,
-      var(--modern-ui-editor-tab-unfocused-active-hover-background) 95%,
-      var(--vscode-foreground)) !important;
+/* .vs-dark .tab:not(.active):hover .tab-fill {
+  border: 1px solid color-mix(in srgb, var(--modern-ui-tab-active-background) 95%, var(--vscode-foreground)) !important;
 }
 
 .vs-dark .tab.active .tab-fill {
-  border: 1px solid color-mix(in srgb, var(--modern-ui-editor-tab-unfocused-active-hover-background) 85%, var(--vscode-foreground)) !important;
-}
+  border: 1px solid color-mix(in srgb, var(--modern-ui-tab-active-background) 85%, var(--vscode-foreground)) !important;
+} */
 
 .editor-widget.suggest-widget {
   border-radius: 5px !important;
